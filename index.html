@@ -13,7 +13,11 @@
     header { justify-content: space-between; }
     a { color: inherit; }
     .marca { font-size: 1.2rem; font-weight: 900; font-style: italic; text-decoration: none; }
-    .marca img { width: 56px; height: 56px; border-radius: 50%; }
+    .marca img {
+  display: block;
+  width: min(280px, 80vw);
+  height: auto;
+}
     .marca em { color: #b74718; }
     main .portada {
       padding-block: clamp(4rem, 12vw, 9rem);
@@ -29,10 +33,9 @@
 </head>
 <body>
   <header id="inicio">
-    <a class="marca" href="#inicio">
-      <img src="logo.png" alt="">
-      <span>RUTA <em>SIN PRISA</em></span>
-    </a>
+   <a class="marca" href="#inicio">
+  <img src="cabecera.png" alt="Ruta Sin Prisa">
+</a>
     <nav aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
       <a href="#rutas">Rutas</a>
