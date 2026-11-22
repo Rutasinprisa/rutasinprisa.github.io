@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vídeo de la etapa 3 del Camino de Santiago y propuesta de recorrido entre Sarria y Portomarín.">
+  <title>Camino de Santiago · Etapa 3 | Ruta Sin Prisa</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #faf7f1; color: #20282d; font: 1rem/1.6 system-ui, sans-serif; }
+    header, main { width: min(1120px, 90%); margin: auto; }
+    header { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; align-items: center; justify-content: space-between; padding: 1rem 0; }
+    header img { display: block; width: min(280px, 80vw); height: auto; }
+    header a { color: inherit; }
+    .intro { background: #20282d; color: #faf7f1; padding: clamp(1.5rem, 6vw, 4rem); border-radius: 1rem; }
+    .intro p { margin: 0; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin: 0 0 .75rem; }
+    h2 { margin: 0 0 .75rem; }
+    .media { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr)); gap: 1.5rem; margin: 1.5rem 0; align-items: start; }
+    .panel { background: #fff; border: 1px solid #52708455; border-radius: .85rem; padding: 1.25rem; }
+    .stops { padding-left: 1.3rem; }
+    .stops li { padding: .25rem 0 .25rem .3rem; }
+    .stops li::marker { color: #b74718; font-weight: 700; }
+    .button { display: inline-block; background: #b74718; color: #fff; border-radius: .5rem; padding: .65rem 1rem; text-decoration: none; font-weight: 700; }
+    .note { color: #475963; font-size: .95rem; }
+    video { display: block; width: 100%; height: clamp(280px, 52vw, 440px); background: #20282d; border-radius: .5rem; }
+    .story { border-top: 1px solid #52708455; padding: 1.5rem 0 2.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./"><img src="cabecera.png" alt="Ruta Sin Prisa"></a>
+    <nav aria-label="Navegación principal"><a href="./#rutas">Volver a rutas</a></nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h1>Camino de Santiago · Etapa 3</h1>
+      <p>Camino Francés en Galicia · Sarria a Portomarín como recorrido propuesto</p>
+    </section>
+    <div class="media">
+      <section class="panel">
+        <h2>El recorrido</h2>
+        <ol class="stops">
+          <li>Sarria</li>
+          <li>Barbadelo</li>
+          <li>Ferreiros</li>
+          <li>Portomarín</li>
+        </ol>
+        <a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Sarria%2C%20Lugo&amp;destination=Portomar%C3%ADn%2C%20Lugo&amp;waypoints=Barbadelo%2C%20Lugo%7CFerreiros%2C%20Paradela&amp;travelmode=walking">Ver recorrido en Google Maps</a>
+        <p class="note">Propuesta a pie. Google Maps calcula las indicaciones entre las paradas. El track de la grabación no está disponible.</p>
+        <p><a href="https://www.caminodesantiago.gal/documents/17639/885411/Camino%20Franc%C3%A9s?version=1.4">Guía oficial del Camino Francés</a></p>
+      </section>
+      <section class="panel">
+        <h2>Vídeo de la ruta</h2>
+        <video controls playsinline preload="metadata" aria-label="Camino de Santiago, etapa 3">
+          <source src="Camino%20Santiago%20etapa%203.mp4" type="video/mp4">
+          <a href="Camino%20Santiago%20etapa%203.mp4">Abrir el vídeo</a>
+        </video>
+      </section>
+    </div>
+    <section class="story">
+      <h2>Así fue la ruta</h2>
+      <p>Esta tercera etapa del Camino de Santiago tiene su propio vídeo. Para acompañarlo, proponemos un tramo del Camino Francés que invita a ir con calma: salir de Sarria, pasar por Barbadelo y Ferreiros y terminar en Portomarín, junto al Miño. Entre aldeas y caminos rurales, merece la pena dejar tiempo para parar y mirar alrededor. La llegada al río pone el cierre al recorrido.</p>
+    </section>
+  </main>
+</body>
+</html>
