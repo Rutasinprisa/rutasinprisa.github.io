@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rutas en moto por Cataluña y más allá.">
+  <title>Ruta Sin Prisa | Rutas en moto</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #faf7f1; color: #20282d; font: 1rem/1.6 system-ui, sans-serif; }
+    header, main section, footer { padding: 1.25rem max(5vw, 1rem); }
+    header, nav, .marca { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    header { justify-content: space-between; }
+    a { color: inherit; }
+    .marca { font-size: 1.2rem; font-weight: 900; font-style: italic; text-decoration: none; }
+    .marca img { width: 56px; height: 56px; border-radius: 50%; }
+    .marca em { color: #b74718; }
+    main .portada {
+      padding-block: clamp(4rem, 12vw, 9rem);
+      color: white;
+      background: linear-gradient(90deg, #20282dee, #20282d55), url("portada.jpg") center / cover #20282d;
+    }
+    h1 { max-width: 18ch; margin: 0 0 1.5rem; font-size: clamp(2.25rem, 5vw, 4.75rem); line-height: 1.06; }
+    .boton { display: inline-block; padding: .75rem 1.25rem; background: #b74718; color: white;
+             border-radius: .5rem; font-weight: 700; text-decoration: none; }
+    .pendiente { padding: 1.25rem; border: 1px solid #527084; border-radius: .75rem; }
+    footer { border-top: 1px solid #527084; }
+  </style>
+</head>
+<body>
+  <header id="inicio">
+    <a class="marca" href="#inicio">
+      <img src="logo.png" alt="">
+      <span>RUTA <em>SIN PRISA</em></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#rutas">Rutas</a>
+      <a href="#proyecto">Sobre el proyecto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="portada">
+      <h1>No importa el destino. Disfruta del camino.</h1>
+      <a class="boton" href="#rutas">Explorar rutas</a>
+    </section>
+    <section id="rutas">
+      <h2>Rutas</h2>
+      <p class="pendiente">Próximamente, las primeras rutas.</p>
+    </section>
+    <section id="proyecto">
+      <h2>Sobre el proyecto</h2>
+      <p>Ruta Sin Prisa es un proyecto personal para descubrir Cataluña y más allá en moto,
+        por carreteras secundarias y con tiempo para disfrutar del paisaje.</p>
+    </section>
+  </main>
+  <footer><a href="https://www.instagram.com/rutasinprisa/">Ruta Sin Prisa en Instagram</a></footer>
+</body>
+</html>
