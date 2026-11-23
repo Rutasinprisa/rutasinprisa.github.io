@@ -4,73 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Rutas en moto por Cataluña y más allá.">
-  <title>Ruta Sin Prisa | Rutas en moto</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #faf7f1; color: #20282d; font: 1rem/1.6 system-ui, sans-serif; }
-    header, main section, footer { padding: 1.25rem max(5vw, 1rem); }
-    header, nav, .marca { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    header { justify-content: space-between; }
-    a { color: inherit; }
-    .marca { font-size: 1.2rem; font-weight: 900; font-style: italic; text-decoration: none; }
-    .marca img {
-  display: block;
-  width: min(280px, 80vw);
-  height: auto;
-}
-    .marca em { color: #b74718; }
-    main .portada {
-      padding-block: clamp(4rem, 12vw, 9rem);
-      color: white;
-      background: linear-gradient(90deg, #20282dee, #20282d55), url("portada-dos-personas.png") center / cover #20282d;
-    }
-    h1 { max-width: 18ch; margin: 0 0 1.5rem; font-size: clamp(2.25rem, 5vw, 4.75rem); line-height: 1.06; }
-    .boton { display: inline-block; padding: .75rem 1.25rem; background: #b74718; color: white;
-             border-radius: .5rem; font-weight: 700; text-decoration: none; }
-    .pendiente { padding: 1.25rem; border: 1px solid #527084; border-radius: .75rem; }
-    footer { border-top: 1px solid #527084; }
-  </style>
+  <title>Inicio | Ruta Sin Prisa</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header id="inicio">
-   <a class="marca" href="#inicio">
-  <img src="cabecera.png" alt="Ruta Sin Prisa">
-</a>
+  <header class="site-header">
+    <a class="brand" href="./"><img src="cabecera.png" width="280" height="93" alt="Ruta Sin Prisa"></a>
     <nav aria-label="Navegación principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#rutas">Rutas</a>
-      <a href="https://www.instagram.com/ruta.sin.prisa?dmpr=MTUwZTVkbjl3a2gwZQ%3D%3D&amp;utm_source=qr" aria-label="Ruta Sin Prisa en Instagram" title="Instagram" style="display: inline-grid; place-items: center; min-width: 44px; min-height: 44px;">
+      <a href="./" aria-current="page">Inicio</a>
+      <a href="rutas.html">Rutas</a>
+      <a class="instagram" href="https://www.instagram.com/ruta.sin.prisa?dmpr=MTUwZTVkbjl3a2gwZQ%3D%3D&amp;utm_source=qr" aria-label="Ruta Sin Prisa en Instagram" title="Instagram">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-          <rect x="3" y="3" width="18" height="18" rx="5" />
-          <circle cx="12" cy="12" r="4" />
-          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
         </svg>
       </a>
-      <a href="#proyecto">Sobre el proyecto</a>
+      <a href="proyecto.html">Sobre el proyecto</a>
     </nav>
   </header>
-  <main>
-    <section class="portada">
-      <h1>No importa el destino. Disfruta del camino.</h1>
-      <a class="boton" href="#rutas">Explorar rutas</a>
-    </section>
-    <section id="rutas">
-      <h2>Rutas</h2>
-      <article class="pendiente">
-        <h3>Camino de Santiago · Etapa 3</h3>
-        <p>Vídeo de la etapa y recorrido propuesto entre Sarria y Portomarín.</p>
-        <a class="boton" href="camino-santiago-etapa-3.html">Ver la ruta</a>
-      </article>
-    </section>
-    <section id="proyecto">
-      <h2>Sobre el proyecto</h2>
-      <div style="max-width: 70ch;">
-        <p><strong>Ruta Sin Prisa nace de algo sencillo: salir en moto y tener tiempo para disfrutar del camino.</strong> A veces basta con tomar una carretera secundaria, pasar por un pueblo que no conocíamos o parar un rato en un mirador. Al volver a casa, son esos momentos los que más ganas tenemos de contar.</p>
-        <p>De ahí salió la idea de guardar las rutas, grabar algunos tramos y compartir lo que encontramos. Empezamos por Cataluña y sus alrededores, cerca de casa. Es curioso lo que cambia un lugar conocido cuando llegas por otra carretera y te das tiempo para parar.</p>
-        <p>Aquí iremos reuniendo recorridos, vídeos y pequeñas historias de cada salida. Si alguna te da ganas de coger la moto y descubrir un sitio nuevo, o de volver por un camino distinto a un sitio que ya conoces, habrá valido la pena compartirla.</p>
-        <p><strong>No importa el destino. Disfruta del camino.</strong></p>
-      </div>
-    </section>
+  <main class="landscape home">
+    <h1>No importa el destino. Disfruta del camino.</h1>
+    <a class="button" href="rutas.html">Explorar rutas</a>
   </main>
 </body>
 </html>
