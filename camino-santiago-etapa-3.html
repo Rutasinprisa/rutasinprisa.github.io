@@ -14,6 +14,9 @@
     header a { color: inherit; }
     .intro { background: #20282d; color: #faf7f1; padding: clamp(1.5rem, 6vw, 4rem); border-radius: 1rem; }
     .intro p { margin: 0; }
+    .route-facts { display: flex; flex-wrap: wrap; gap: .75rem 2rem; margin: 1.25rem 0 0; }
+    .route-facts dt { font-size: .85rem; color: #e1e8eb; }
+    .route-facts dd { margin: 0; font-size: 1.1rem; font-weight: 700; }
     h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin: 0 0 .75rem; }
     h2 { margin: 0 0 .75rem; }
     .media { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr)); gap: 1.5rem; margin: 1.5rem 0; align-items: start; }
@@ -36,6 +39,11 @@
     <section class="intro">
       <h1>Camino de Santiago · Etapa 3</h1>
       <p>Camino Francés en Galicia · Sarria a Portomarín como recorrido propuesto</p>
+      <dl class="route-facts" aria-label="Datos del recorrido propuesto">
+        <div><dt>Distancia</dt><dd>22,2 km</dd></div>
+        <div><dt>Duración estimada</dt><dd>5–6 h a pie</dd></div>
+        <div><dt>Modalidad</dt><dd>Senderismo</dd></div>
+      </dl>
     </section>
     <div class="media">
       <section class="panel">

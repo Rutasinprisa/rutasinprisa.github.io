@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Rutas en moto por Cataluña y más allá.">
   <title>Rutas | Ruta Sin Prisa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="estilos.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="mapa-rutas.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -25,14 +28,21 @@
   </header>
   <main class="landscape routes">
     <h1>Rutas</h1>
+    <div class="route-catalog">
     <ul class="route-grid">
       <li>
-        <a class="route-card" href="camino-santiago-etapa-3.html">
+        <a class="route-card" href="camino-santiago-etapa-3.html" data-lat="42.781" data-lon="-7.414">
           <img src="mapa-sarria-portomarin.png" alt="">
           <span>Camino de Santiago · Etapa 3</span>
         </a>
       </li>
     </ul>
+    <section class="map-panel" aria-labelledby="mapa-titulo">
+      <h2 id="mapa-titulo">Mapa de rutas</h2>
+      <div id="mapa-rutas" role="region" aria-label="Mapa interactivo de las rutas publicadas" hidden></div>
+      <p id="mapa-alternativa">Puedes abrir cada ficha desde las tarjetas de rutas.</p>
+    </section>
+    </div>
   </main>
 </body>
 </html>

@@ -65,6 +65,17 @@ h1 { margin: 0 0 1.25rem; font-size: clamp(2.25rem, 5vw, 4.75rem); line-height: 
 .route-card span { padding: 1rem; font-size: 1.25rem; font-weight: 700; }
 .route-card:hover span { text-decoration: underline; }
 
+.route-catalog {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: 1.5rem;
+}
+.route-catalog .route-grid { margin: 0; }
+.map-panel { padding: 1rem; border-radius: .75rem; background: #faf7f1; color: #20282d; }
+.map-panel h2 { margin: 0 0 .75rem; font-size: 1.3rem; }
+#mapa-rutas { height: clamp(18rem, 40vw, 27rem); border-radius: .5rem; }
+
 .story {
   background-image: linear-gradient(90deg, #20282df2, #20282dbd), url("portada-dos-personas.png");
 }
@@ -73,4 +84,5 @@ h1 { margin: 0 0 1.25rem; font-size: clamp(2.25rem, 5vw, 4.75rem); line-height: 
 @media (max-width: 640px) {
   .landscape { background-position: 65% center; }
   .site-header { padding-block: .75rem; }
+  .route-catalog { grid-template-columns: 1fr; }
 }
